@@ -90,7 +90,7 @@ async def song(_, message):
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
-            secmul *= 60
+            secmul *= 3
         await shed.edit("📤 Göndərilir...")
         s = await message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur, performer=channel)
         await shed.delete()
