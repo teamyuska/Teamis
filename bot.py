@@ -35,17 +35,17 @@ bot = Client(
 @bot.on_message(filters.command("start") & ~filters.edited)
 async def start(_, message):
    if message.chat.type == 'private':
-       await message.reply("**Hey There, I'm a 𝐄𝐌𝐌𝐀 𝐌𝐔𝐒𝐈𝐂 𝐁𝐎𝐓.Send The Name of the Song You Want.**\n`Eg:- /song Bad Habits` \n\n **A bot by @epusthakalaya_bots.**",   
+       await message.reply("**Salam mən Quliyev Song 👋🏻, yükləmək istədiyin mahnının adını mənə yaz.**\n`Nümunə:- /song Sweater Weather` \n\n **Bot @quliyevv_17 - ə məxsusdur...**",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "⛑ Dev ⛑", url="https://t.me/kasu_bro"),
+                                            "⛑ Owner ⛑", url="https://t.me/quliyevv_17"),
                                         InlineKeyboardButton(
-                                            "📣 Channel 📣", url="https://t.me/epusthakalaya_bots")
+                                            "📣 Kanal 📣", url="https://t.me/IegendMMC")
                                     ]]
                             ))
    else:
-      await message.reply("**𝐄𝐌𝐌𝐀 𝐌𝐔𝐒𝐈𝐂 𝐁𝐎𝐓  is online ✨**")
+      await message.reply("**Quliyev Song aktivdir...✨**")
 
 
 @bot.on_message(filters.command("song") & ~filters.edited)
@@ -53,7 +53,7 @@ async def song(_, message):
     if len(message.command) < 2:
        return await message.reply("**Usage:**\n - `Eg:- /song Bad Habits`")
     query = message.text.split(None, 1)[1]
-    shed = await message.reply("🔎 Finding the song...")
+    shed = await message.reply("🔎 Sorğu axtarılır...")
     ydl_opts = {
        "format": "bestaudio[ext=m4a]",
        "geo-bypass": True,
@@ -80,22 +80,22 @@ async def song(_, message):
         )
         print(str(e))
         return
-    await shed.edit("📥 Downloading...")
+    await shed.edit("📥 Yüklənir...")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = "🎵 Uploaded by @epusthakalaua_bots"
+        rep = "🎵 Yüklədi -  @quliyevsongbot"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        await shed.edit("📤 Uploading...")
+        await shed.edit("📤 Göndərilir...")
         s = await message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur, performer=channel)
         await shed.delete()
     except Exception as e:
-        await shed.edit("❌ Error")
+        await shed.edit("❌ Xəta.!")
         print(e)
 
     try:
