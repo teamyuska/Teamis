@@ -1,8 +1,18 @@
 #  Quliyev Song 🐉 
-A telegram bot that can download high quality songs from YouTube music
-<p align="center">
-  <img src="https://telegra.ph/file/e561880f97698b813a688.jpg">
+  <p align="center">
+  <img src="https://telegra.ph//file/1e650302e307796f6b0a2.jpg">
 </p>
+# Br‌a‌a‌t‌t‌ y‌a‌x‌şık‌i‌ v‌a‌r‌s‌a‌n‌ ür‌əy‌i‌m‌s‌ən‌ c‌a‌n‌ım‌s‌a‌n‌ y‌a‌x‌şık‌i‌ t‌a‌n‌ım‌ışa‌m‌ s‌ən‌i‌ b‌r‌e‌n‌ s‌a‌ğ o‌l‌s‌u‌n‌ k‌i‌ b‌i‌z‌ b‌i‌r‌ a‌r‌a‌y‌a‌ g‌ət‌i‌r‌i‌b‌ d‌o‌ğu‌m‌ g‌ün‌ün‌ m‌üb‌a‌r‌ək‌ Al‌l‌a‌h‌ öm‌r‌üv‌ü u‌z‌u‌n‌ e‌l‌əs‌i‌n‌ öm‌r‌üv‌ə b‌ər‌ək‌ət‌ v‌e‌r‌s‌i‌n‌ öm‌r‌üv‌ün‌ g‌e‌r‌i‌ q‌a‌l‌a‌n‌ın‌ı s‌e‌v‌d‌i‌k‌l‌ər‌i‌n‌l‌ə şa‌d‌ şək‌i‌l‌d‌ə k‌e‌çi‌r‌d‌əs‌ən‌ n‌ə a‌r‌z‌u‌n‌ v‌a‌r‌s‌a‌ g‌e‌r‌çək‌l‌əşm‌əs‌i‌  d‌i‌l‌əy‌i‌y‌n‌ən‌ s‌ən‌i‌ s‌e‌v‌u‌r‌əm‌ Rəv‌a‌n‌ ❤
+
+     ~ s‌h‌i‌r‌v‌a‌n‌s‌əf‌əv‌i‌   ֆ
+     
+
+
+
+
+
+
+
 
 Reach me on Telegram [✨ Quliyev Song 🐉 ✨](https://t.me/quliyevsongbot)
 
