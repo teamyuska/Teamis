@@ -35,7 +35,7 @@ bot = Client(
 @bot.on_message(filters.command("start") & ~filters.edited)
 async def start(_, message):
    if message.chat.type == 'private':
-       await message.reply("**Salam mən Ülvi Song 👋🏻, yükləmək istədiyin mahnının adını mənə yaz.**\n`Nümunə:- /song Sweater Weather` \n\n **Bot @Brend_Ulvi - ə məxsusdur...**",   
+       await message.reply("**Salam mən Ülvi Song 👋🏻, yükləmək istədiyin mahnının adını mənə yaz.**\n`Nümunə:- /song Saybu Asta dur` \n\n **Bot @Brend_Ulvi - ə məxsusdur...**",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -51,7 +51,7 @@ async def start(_, message):
 @bot.on_message(filters.command("song") & ~filters.edited)
 async def song(_, message):
     if len(message.command) < 2:
-       return await message.reply("**Usage:**\n - `Eg:- /song Bad Habits`")
+       return await message.reply("**Usage:**\n - `Eg:- /song Saybu Asta dur`")
     query = message.text.split(None, 1)[1]
     shed = await message.reply("🔎 Sorğu axtarılır...")
     ydl_opts = {
@@ -86,7 +86,7 @@ async def song(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = "🎵 Yüklədi -  @UlviSongRobot"
+        rep = "🎵 Musiqi Kanalım -  @UIviMusic"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
