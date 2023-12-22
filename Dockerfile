@@ -8,4 +8,4 @@ RUN apt-get -qq install -y \
     opus-tools
 
 RUN pip3 install -U pip
-RUN pip3 install -U -r requirements.txt
+RUN pip3 install requirements.txt
