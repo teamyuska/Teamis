@@ -39,13 +39,13 @@ async def start(_, message):
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            " Owner ", url="https://t.me/Brend_Ulvi"),
+                                            " Owner ", url="https://t.me/Y7SKA"),
                                         InlineKeyboardButton(
-                                            "📣 Kanal 📣", url="https://t.me/MorphinChat")
+                                            "📣 Kanal 📣", url="https://t.me/yuskabotumi")
                                     ]]
                             ))
    else:
-      await message.reply("**Ülvi Song aktivdir...✨**")
+      await message.reply("**Yuska Song aktivdir...✨**")
 
 
 @bot.on_message(filters.command("song") & ~filters.edited)
@@ -86,7 +86,7 @@ async def song(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = "🎵 Musiqi Kanalım -  @UIviMusic"
+        rep = "🎵 Musiqi Kanalım -  @YuskaMusic"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
