@@ -12,7 +12,7 @@
   "success_url": "https://t.me/songazerbot",
   "env": {
     "TOKEN": {
-      "description": "Take the token of your bot",
+      "description": "6746110732:AAEqr0qHkncbPANl4sIyY3Zsrz08qg88tkc",
       "value": "",
       "required": true
     }
