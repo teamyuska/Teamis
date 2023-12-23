@@ -17,7 +17,7 @@ import os
 import logging
 import requests
 import aiohttp
-import yt-dlp
+import yt_dlp
 from pyrogram import filters, Client, idle
 from youtube_search import YoutubeSearch
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
