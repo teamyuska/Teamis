@@ -1,11 +1,8 @@
-FROM python:3.9.6-buster
-RUN apt-get -qq update -y && apt-get -qq upgrade -y
-RUN apt-get -qq install -y \
-    git \
-    curl \
-    wget \
-    ffmpeg \
-    opus-tools
-
-RUN pip3 install -U pip
-RUN pip3 install requirements.txt
+FROM nikolaik/python-nodejs:python3.9-nodejs18
+RUN apt-get update -y && apt-get upgrade -y \
+    && apt-get install -y --no-install-recommends ffmpeg \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+COPY . /app/
+WORKDIR /app/
+RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
