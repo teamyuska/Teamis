@@ -1,6 +1,6 @@
 youtube_search
 requests
-youtube_dl
+yt-dlp
 aiohttp
 pyrogram==1.2.20
 tgcrypto
